@@ -178,7 +178,7 @@ main .card-section .card{
     display: block;
 }
 
-.content h1, h2, p{
+.content h1, h2, .para{
     font-variant: small-caps;
     text-shadow: 3px 0 3px rgba(255, 255, 255, 0.8);
     opacity: 0;
