@@ -227,7 +227,7 @@ main .card-section .card{
 
 /* Media query */
 
-@media (max-width: 410px) {
+@media (max-width: 500px) {
     .place .placeItem:nth-child(3){
         left: calc(100%);
     }
