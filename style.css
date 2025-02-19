@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: #0d6efd;
+}
+
+.transition{
+    transition: all .5s ease-in-out;
+}
+
+/* Navbar toggler */
+.navbar-toggler:focus{
+    box-shadow: 0 0 0px 5px rgba(0, 123, 255, 0.5);
+}
+
+.active{
+    color: #000000;
+    font-weight: 800;
+    width: fit-content;
+}
+
+/* Input box in Navigation */
+
+
+/* Main */
+
+body main{
+    display: none;
+}
+main .heading h1{
+    font-variant: small-caps;
+}
+
+#mainStories .card:hover{
+    transform: scale(1.02);
+    transition: all .5s ease;
+}
+
+#mainStories .border-animation{
+    position: relative;
+    height: 1.5vh;
+    border-radius: 10px;
+}
+
+#mainStories .border-animation span{
+    position: absolute;
+    width: 20px;
+    height: 5px;
+    border-radius: 30%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: moving-line 5s ease-in-out infinite alternate;
+}
+
+@keyframes moving-line {
+    0%{
+        left: 2%;
+    }
+    100%{
+        left: 98%;
+    }
+}
+
+/* Card section */
+
+.section-head-title{
+    font-variant: small-caps;
+}
+
+main .card-section .card{
+    padding: 0;
+}
+
+.card-section img:nth-of-type(2){
+    height: 110%;
+}
+
+.card img{
+    height: auto;
+    object-fit: cover;
+}
+
+.card-title{
+    font-variant: small-caps;
+}
+
+/* Main-place */
+
+#mainPlaces{
+    width: 100%;
+}
+
+
+#mainPlaces .place{
+    width: 100%;
+    height: 92vh;
+    position: relative;
+}
+
+
+.place .placeItem{
+    width: 180px;
+    height: 250px;
+    position: absolute;
+    top: 80%;
+    left: 70%;
+    transform: translateY(-70%);
+    border-radius: 20px;
+    box-shadow: 0 25px 50px rgba(0,0,0,.4);
+    z-index: 100;
+    transition: 1s;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+}
+
+.placeItem::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.5);
+    border-radius: 20px;
+}
+
+.place .placeItem:nth-child(1),
+.place .placeItem:nth-child(2){
+    top: 0;
+    left: 0;
+    transform: translate(0,0);
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.place .placeItem:nth-child(3){
+    left: calc(74%);
+}
+
+.place .placeItem:nth-child(4){
+    left: calc(74% + 200px);
+}
+
+.place .placeItem:nth-child(5){
+    left: calc(74% + 400px);
+}
+
+.place .placeItem:nth-child(6){
+    left: calc(74% + 600px);
+}
+
+.place .placeItem:nth-child(7){
+    left: calc(74% + 800px);
+}
+
+.place .placeItem:nth-child(8){
+    left: calc(74% + 1000px);
+}
+
+.placeItem .content{
+    position: absolute;
+    top: 10%;
+    transform: translateX(-50%);
+    text-align: start;
+    display: none;
+    color: #f2f2f2;
+    z-index: 500;
+    max-width: 600px;
+}
+
+.placeItem:nth-child(2) .content{
+    display: block;
+}
+
+.content h1, h2, p{
+    font-variant: small-caps;
+    text-shadow: 3px 0 3px rgba(255, 255, 255, 0.8);
+    opacity: 0;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+
+.content h1{
+    font-size: 6.5em;
+    margin-left: -6.5px;
+    font-weight: 600;
+    animation: animate 1s ease-in-out 0.5s 1 forwards;
+}
+
+.content h2{
+    font-size: 3em;
+    animation: animate 1s ease-in-out 1s 1 forwards;
+}
+
+.content p{
+    font-size: 1.1em;
+    font-weight: 600;
+    animation: animate 1s ease-in-out 1.5s 1 forwards;
+}
+
+.arrows{
+    position: absolute;
+    z-index: 200;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 600%);
+    max-width: 30%;
+}
+
+@keyframes animate {
+    from{
+        opacity: 0;
+        transform: translate(0, 180px);
+        filter: blur(33px);
+    }
+    to{
+        opacity: 1;
+        transform: translate(0,0);
+        filter: blur(0);
+    }
+}
+
+/* Media query */
+
+@media (max-width: 410px) {
+    .place .placeItem:nth-child(3){
+        left: calc(100%);
+    }
+    
+    .place .placeItem:nth-child(4){
+        left: calc(100% + 200px);
+    }
+    
+    .place .placeItem:nth-child(5){
+        left: calc(100% + 400px);
+    }
+    
+    .place .placeItem:nth-child(6){
+        left: calc(100% + 600px);
+    }
+    
+    .place .placeItem:nth-child(7){
+        left: calc(100% + 800px);
+    }
+    
+    .place .placeItem:nth-child(8){
+        left: calc(100% + 1000px);
+    }
+
+    .arrows{
+        transform: translate(-50%, 700%);
+    }
+}

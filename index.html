@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Font CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Custom style sheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="container-fluid">
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg border-bottom container-fluid">
+        <div class="container">
+          <a class="navbar-brand" href="#">TM</a>
+          <button class="navbar-toggler" id="navToggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars-staggered"></i>
+          </button>
+          <div class="collapse navbar-collapse transition" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a id="menuLink" class="nav-link active" aria-current="page" href="#">Stories</a>
+              </li>
+              <li class="nav-item">
+                <a id="menuLink" class="nav-link" href="#">Place</a>
+              </li>
+              <li class="nav-item">
+                <a id="menuLink" class="nav-link" href="#">Export</a>
+              </li>
+            </ul>
+            <div class="position-relative d-inline-block ms-2">
+                <input class="form-control d-inline-block rounded-pill" type="text" placeholder="Search">
+                <i class="fa-solid fa-magnifying-glass position-absolute top-50 end-0 mx-3 translate-middle-y"></i>
+            </div>
+          </div>
+        </div>
+      </nav>
+    <!-- Navigation bar -->
+
+    <main class="container my-5" id="mainStories">
+        <section class="heading-section mb-5">
+            <h1 class="fw-bold section-head-title">Tamil Nadu</h1>
+            <p class="fs-5 fw-light">Every place is our home; all people our kin</p>
+        </section>
+
+        <div class="mb-4">
+          <h1 class="fw-bold section-head-title my-3">Place and Culture</h1>
+        </div>
+        <div class="border mb-4 border-animation">
+          <span></span>
+        </div>
+
+        <section class="card-section row g-4">
+          <!-- Card 1 -->
+          <div class="col-lg-6">
+            <div class="card h-100">
+              <div class="row g-0 h-100">
+                <div class="col-sm-4">
+                  <img src="image/Briyani.jpg" class="img-fluid rounded-2 h-100 w-100" alt="Briyani.jpg">
+                </div>
+                <div class="col-sm-8">
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold">One Plate of Dindigul Biryani is Never Enough!</h5>
+                    <p class="card-text text-secondary">Dindigul Biryani – a flavorful blend of Seeraga Samba rice, succulent meat, and aromatic spices with a tangy twist. Every bite bursts with rich flavors, making it a must-try for biryani lovers! 🍛🔥</p>
+                    <div class="d-flex align-items-center mt-5 mb-0">
+                        <img src="image/Arun.jpg" alt="" class="rounded-circle" width="40">
+                        <div class="ms-2">
+                          <p class="mb-0 fw-semibold">Arun</p>
+                          <p class="text-muted small mb-0">15 Feb 2025</p>
+                        </div>
+                        <i class="fa-regular fa-bookmark ms-auto me-3 fs-5"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-lg-6">
+            <div class="card h-100">
+              <div class="row g-0 h-100">
+                <div class="col-sm-4">
+                  <img src="image/Kodaikanal hill.jpeg" class="img-fluid rounded-2 h-100 w-100" alt="Kodaikanal_hills_falls.jpg">
+                </div>
+                <div class="col-sm-8">
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold">Kodaikanal Hill Rivers: Nature’s Flowing Beauty</h5>
+                    <p class="card-text text-secondary">Kodaikanal, often called the "Princess of Hill Stations," is home to serene rivers and streams that enhance its breathtaking beauty. The Silver Cascade Falls, originating from the overflowing waters of Kodaikanal Lake, is a mesmerizing sight, cascading down rocky slopes.</p>
+                    <div class="d-flex align-items-center mt-5 mb-0">
+                        <img src="image/Karthik.jpg" alt="" class="rounded-circle" width="40">
+                        <div class="ms-2">
+                          <p class="mb-0 fw-semibold">Karthik</p>
+                          <p class="text-muted small mb-0">10 May 2025</p>
+                        </div>
+                        <i class="fa-regular fa-bookmark ms-auto me-3 fs-5"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-lg-6">
+            <div class="card h-100">
+              <div class="row g-0 h-100">
+                <div class="col-sm-4">
+                  <img src="image/Pongal.jpeg" class="img-fluid rounded-2 h-100 w-100" alt="Kodaikanal_hills_falls.jpg">
+                </div>
+                <div class="col-sm-8">
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold">Pongal: A Harvest of Gratitude and Prosperity</h5>
+                    <p class="card-text text-secondary">Pongal is a vibrant harvest festival celebrating gratitude, prosperity, and the joy of new beginnings with the sweet aroma of freshly cooked rice.</p>
+                    <div class="d-flex align-items-center mt-5 mb-0">
+                        <img src="image/Vikram.jpg" alt="" class="rounded-circle" width="40">
+                        <div class="ms-2">
+                          <p class="mb-0 fw-semibold">Vikram</p>
+                          <p class="text-muted small mb-0">14 Jan 2025</p>
+                        </div>
+                        <i class="fa-regular fa-bookmark ms-auto me-3 fs-5"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="col-lg-6">
+            <div class="card h-100">
+              <div class="row g-0 h-100">
+                <div class="col-sm-4">
+                  <img src="image/Thaatti bomma.jpeg" class="img-fluid rounded-2 h-100 w-100" alt="Kodaikanal_hills_falls.jpg">
+                </div>
+                <div class="col-sm-8">
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold">Thalaatti Bommai: The Gentle Rocking Doll of Tradition</h5>
+                    <p class="card-text text-secondary">Thalaatti Bommai is a traditional South Indian rocking doll known for its gentle swaying motion. Crafted with vibrant colors and intricate designs, it symbolizes balance, heritage, and cultural artistry.</p>
+                    <div class="d-flex align-items-center mt-5 mb-0">
+                        <img src="image/Pranav.jpg" alt="" class="rounded-circle" width="40">
+                        <div class="ms-2">
+                          <p class="mb-0 fw-semibold">Pranav</p>
+                          <p class="text-muted small mb-0">15 Aug 2025</p>
+                        </div>
+                        <i class="fa-regular fa-bookmark ms-auto me-3 fs-5"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+
+      <div class="mt-5 mb-4">
+        <h1 class="fw-bold section-head-title my-3">Traditional</h1>
+      </div>
+      <div class="border mb-4 border-animation">
+        <span></span>
+      </div>
+
+      <section class="card-section_2 row g-4">
+        <!-- Card 1 -->
+        <div class="col-lg-4">
+          <div class="card h-100">
+            <div class="row g-0">
+              <div class="col-12">
+                <img src="image/Jallikattu.jpg" class="img-fluid rounded-2" alt="Jallikattu_People.jpg">
+              </div>
+              <div class="col-12">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Jallikattu</h5>
+                  <p class="card-text text-secondary">Jallikattu is a traditional bull-taming sport popular in Tamil Nadu, India, especially during the Pongal festival. In this event, participants attempt to grab and hold onto the bull's hump while it runs freely, showcasing their strength and skill.</p>
+                  <div class="d-flex align-items-center">
+                    <img src="image/Vikram.jpg" class="rounded-circle" width="40" alt="">
+                    <div class="ms-2">
+                      <p class="mb-0">David</p>
+                      <p class="text-muted samll mb-0">14 Jan 2025</p>
+                    </div>
+                    <i class="fa-regular fa-bookmark ms-auto me-3 fs-5"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-lg-4">
+          <div class="card h-100">
+            <div class="row g-0">
+              <div class="col-12">
+                <img src="image/Dance in pongal function.jpg" class="img-fluid rounded-2" alt="Kummi_kolattam.jpg">
+              </div>
+              <div class="col-12">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Kummi and Kolattam</h5>
+                  <p class="card-text text-secondary">
+                    <b>Kummi:</b> A folk dance where women form a circle and clap rhythmically while singing traditional songs.
+                    <b>Kolattam:</b> Also known as the "stick dance," where participants use sticks to create rhythmic beats while dancing.
+                  </p>
+                  <div class="d-flex align-items-center">
+                    <img src="image/Karthik.jpg" class="rounded-circle" width="40" alt="">
+                    <div class="ms-2">
+                      <p class="mb-0">George</p>
+                      <p class="text-muted samll mb-0">14 Jan 2025</p>
+                    </div>
+                    <i class="fa-regular fa-bookmark ms-auto me-3 fs-5"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-lg-4">
+          <div class="card h-100">
+            <div class="row g-0">
+              <div class="col-12">
+                <img src="image/Generation of family.jpg" class="img-fluid rounded-2" alt="Generation_of_family.jpg">
+              </div>
+              <div class="col-12">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Generational Hierarchy</h5>
+                  <p class="card-text text-secondary">
+                    ♦ <b>(மூத்த தலைமுறை)</b> – Eldest generation (Grandparents). <br>
+                    ♦ <b>(இரண்டாம் தலைமுறை)</b> – Second generation (Parents, Uncles, Aunts). <br>
+                    ♦ <b>(மூன்றாம் தலைமுறை)</b> – Third generation (Children, Grandchildren).
+                  </p>
+                  <div class="d-flex align-items-center">
+                    <img src="image/Arun.jpg" class="rounded-circle" width="40" alt="">
+                    <div class="ms-2">
+                      <p class="mb-0">Sam</p>
+                      <p class="text-muted samll mb-0">14 Jan 2025</p>
+                    </div>
+                    <i class="fa-regular fa-bookmark ms-auto me-3 fs-5"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-lg-4">
+          <div class="card h-100">
+            <div class="row g-0">
+              <div class="col-12">
+                <img src="image/Harvesting crops for Festival.jpg" class="img-fluid rounded-2" alt="Harvesting_corps.jpg">
+              </div>
+              <div class="col-12">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Harvesting</h5>
+                  <p class="card-text text-secondary">Harvesting plays a crucial role in the Pongal festival, as it is a celebration of farmers' hard work and gratitude for a bountiful harvest. During Pongal, freshly harvested crops, especially rice, sugarcane, and turmeric, are used in cooking traditional dishes.</p>
+                  <div class="d-flex align-items-center">
+                    <img src="image/Vikram.jpg" class="rounded-circle" width="40" alt="">
+                    <div class="ms-2">
+                      <p class="mb-0">Steve</p>
+                      <p class="text-muted samll mb-0">14 Jan 2025</p>
+                    </div>
+                    <i class="fa-regular fa-bookmark ms-auto me-3 fs-5"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="col-lg-4">
+          <div class="card h-100">
+            <div class="row g-0">
+              <div class="col-12">
+                <img src="image/Kolam in pongal function.jpg" class="img-fluid rounded-2" alt="Kolam_in_pongal.jpg">
+              </div>
+              <div class="col-12">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Kolam</h5>
+                  <p class="card-text text-secondary">Jallikattu is a traditional bull-taming sport popular in Tamil Nadu, India, especially during the Pongal festival. In this event, participants attempt to grab and hold onto the bull's hump while it runs freely, showcasing their strength and skill</p>
+                  <div class="d-flex align-items-center">
+                    <img src="image/Arun.jpg" class="rounded-circle" width="40" alt="">
+                    <div class="ms-2">
+                      <p class="mb-0">Victor</p>
+                      <p class="text-muted samll mb-0">14 Jan 2025</p>
+                    </div>
+                    <i class="fa-regular fa-bookmark ms-auto me-3 fs-5"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="col-lg-4">
+          <div class="card h-100">
+            <div class="row g-0">
+              <div class="col-12">
+                <img src="image/Sweet pongal Pot.jpg" class="img-fluid rounded-2" alt="Sweet_pongal_pot.jpg">
+              </div>
+              <div class="col-12">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Pongal</h5>
+                  <p class="card-text text-secondary">Pongal is a traditional Tamil harvest festival celebrated in South India, especially in Tamil Nadu. It marks the gratitude towards the Sun God for a bountiful harvest.The festival lasts for four days, with rituals like Bhogi (burning old items), Thai Pongal (cooking sweet rice), Mattu Pongal (honoring cattle), and Kaanum Pongal (family gatherings).</p>
+                  <div class="d-flex align-items-center">
+                    <img src="image/Pranav.jpg" class="rounded-circle" width="40" alt="">
+                    <div class="ms-2">
+                      <p class="mb-0">Harry</p>
+                      <p class="text-muted samll mb-0">14 Jan 2025</p>
+                    </div>
+                    <i class="fa-regular fa-bookmark ms-auto me-3 fs-5"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+        
+    </main>
+
+    <main class="placeContainer overflow-hidden" id="mainPlaces">
+      <section class="place">
+        <div class="placeList" id="placeList">
+          <div class="placeItem" style="background-image: url(image/Meenakshi\ Amman.jpg);">
+            <div class="content">
+              <h1>Madurai</h1>
+              <h2>Meenakshi Amman Temple</h2>
+              <p>Madurai Meenakshi Amman Temple is a magnificent temple dedicated to Goddess Meenakshi and Lord Sundareswarar. Located in the heart of Madurai, it is known for its towering gopurams, intricate sculptures, and rich history. A symbol of Tamil culture and Dravidian architecture, the temple attracts devotees and tourists from all over the world. The annual Meenakshi Thirukalyanam festival is a grand celebration here.</p>
+            </div>
+          </div>
+          <div class="placeItem" style="background-image: url(image/Kumbakonam\ temple.jpg);">
+            <div class="content">
+              <h1>Kumbakonam</h1>
+              <h2>Adi Kumbeswarar Temple</h2>
+              <p>Adi Kumbeswarar Temple in Kumbakonam is a renowned Shiva temple, dedicated to Lord Kumbeswarar and Goddess Mangalambika. Built by the Cholas, it features intricate Dravidian architecture, majestic gopurams, and detailed sculptures. The temple is famous for its Mahamaham Festival, held once every 12 years, attracting thousands of devotees. It is believed that Lord Shiva mixed divine nectar in a kumbha (pot) here, giving the town its name.</p>
+            </div>
+          </div>
+          <div class="placeItem" style="background-image: url(image/Valaparai\ natural\ river.jpg);">
+            <div class="content">
+              <h1>Valparai</h1>
+              <h2>Aliyar River</h2>
+              <p>Valparai, a scenic hill station in Tamil Nadu, is known for its lush green tea estates and pristine natural beauty. The region is home to serene rivers and waterfalls, flowing through dense forests and rich wildlife habitats. These rivers, originating from the Western Ghats, provide a tranquil escape for nature lovers. The crystal-clear waters, surrounded by misty hills, make Valparai a paradise for travelers seeking peace and adventure.</p>
+            </div>
+          </div>
+          <div class="placeItem" style="background-image: url(image/Tanjaur.jpg);">
+            <div class="content">
+              <h1>Thanjavur</h1>
+              <h2>Brihadeeswarar Temple</h2>
+              <p>Brihadeeswarar Temple in Thanjavur, also known as Peruvudaiyar Kovil, is one of the greatest architectural marvels of India. Built by Raja Raja Chola I in the 11th century, it is a UNESCO World Heritage Site. The temple is dedicated to Lord Shiva and features a massive 216-foot-tall vimana (tower), which is one of the tallest in the world. The temple is famous for its intricate carvings, grand Nandi statue, and its shadowless vimana, which is a unique architectural wonder.</p>
+            </div>
+          </div>
+          <div class="placeItem" style="background-image: url(image/Rameswarm\ Papan\ palam.jpg);">
+            <div class="content">
+              <h1>Rameswaram</h1>
+              <h2>Papan Palam</h2>
+              <p>Pamban Bridge, also known as Papan Palam, is India's first sea bridge, connecting Rameswaram Island to mainland Tamil Nadu. Built in 1914, this iconic railway bridge stretches over 2.3 km across the Bay of Bengal. It features a double-leaf bascule section that lifts to allow ships to pass. The scenic beauty of the turquoise waters and the engineering marvel of the bridge make it a must-visit attraction. A parallel road bridge, known as Annai Indira Gandhi Bridge, adds to the region's connectivity and charm.</p>
+            </div>
+          </div>
+          <div class="placeItem" style="background-image: url(image/Thiruvallur\ selai.jpg);">
+            <div class="content">
+              <h1>Kanyakumari</h1>
+              <h2>Thiruvalluvar Statue</h2>
+              <p>The Thiruvalluvar Statue in Kanyakumari is a grand monument dedicated to Thiruvalluvar, the famous Tamil poet and philosopher. Standing at 133 feet (40.6 meters) tall, it symbolizes the 133 chapters of Thirukkural, his renowned literary work. Located on a small island near the Vivekananda Rock Memorial, the statue represents virtue (Aram), wealth (Porul), and love (Inbam)—the core themes of Thirukkural. Surrounded by the vast Indian Ocean, this iconic structure is a symbol of Tamil heritage and wisdom.</p>
+            </div>
+          </div>
+          <div class="placeItem" style="background-image: url(image/Ooty.jpg);">
+            <div class="content">
+              <h1>Nilgiri Hills</h1>
+              <h2>Ooty</h2>
+              <p>Ooty, also known as Udhagamandalam, is a picturesque hill station in the Nilgiri Hills of Tamil Nadu. Known for its lush green tea gardens, misty mountains, and cool climate, it is a popular tourist destination. The Ooty Lake, Doddabetta Peak, and Botanical Gardens attract visitors with their natural beauty. Often called the "Queen of Hill Stations," Ooty offers breathtaking views, scenic train rides on the Nilgiri Mountain Railway, and a refreshing escape into nature.</p>
+            </div>
+          </div>
+          <div class="placeItem" style="background-image: url(image/Agiriculture.jpg);">
+            <div class="content">
+              <h1>Tamil Nadu</h1>
+              <h2>Agriculture</h2>
+              <p>Tamil Nadu is one of India's leading agricultural states, known for its diverse crops and advanced farming techniques. The state is a major producer of rice, sugarcane, cotton, millets, and pulses, with the Cauvery Delta being called the "Rice Bowl of Tamil Nadu." Cash crops like tea, coffee, and spices thrive in the hill regions. Traditional farming practices, along with modern irrigation and organic farming, sustain the state's rich agricultural heritage. Festivals like Pongal celebrate the importance of farmers and the harvest season.</p>
+            </div>
+          </div>
+        </div>
+        <div id="arrows" class="arrows d-flex align-items-center justify-content-center gap-2">
+          <button class="next btn btn-primary rounded-circle" onclick="slide('prev')"><i class="fa-solid fa-arrow-left"></i></button>
+          <button class="prev btn btn-primary rounded-circle"onclick="slide('next')"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </section>
+    </main>
+
+    <main class="container my-5" id="mainEx"></main>
+</body>
+<!-- Bootstrap script -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<!-- Custom Script -->
+ <script src="main.js"></script>
+</html>
