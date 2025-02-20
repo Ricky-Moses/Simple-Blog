@@ -31,7 +31,7 @@
 body main{
     display: none;
 }
-main .heading h1{
+#mainStories .heading h1{
     font-variant: small-caps;
 }
 
@@ -67,24 +67,24 @@ main .heading h1{
 
 /* Card section */
 
-.section-head-title{
+#mainStories .section-head-title{
     font-variant: small-caps;
 }
 
-main .card-section .card{
+#mainStories .card-section .card{
     padding: 0;
 }
 
-.card-section img:nth-of-type(2){
+#mainStories .card-section img:nth-of-type(2){
     height: 110%;
 }
 
-.card img{
+#mainStories .card img{
     height: auto;
     object-fit: cover;
 }
 
-.card-title{
+#mainStories .card-title{
     font-variant: small-caps;
 }
 
@@ -225,7 +225,36 @@ main .card-section .card{
     }
 }
 
+/* About Me */
+
+#mainAbout .socialPlatform{
+    width: fit-content !important;
+}
+
+/* About Me */
+
 /* Media query */
+
+@media (max-width: 992px) {
+    #mainAbout .resume{
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    #mainAbout .resume .row .card-title{
+        display: flex !important;
+        flex-direction: column !important;
+    }
+    #mainAbout .resume .row img{
+        width: 100% !important;
+        object-fit: contain !important;
+        height: fit-content !important;
+    }
+    #mainAbout .resume .row .card-body form{
+        width: 100% !important;
+    }
+}
 
 @media (max-width: 500px) {
     .place .placeItem:nth-child(3){
@@ -254,5 +283,13 @@ main .card-section .card{
 
     .arrows{
         transform: translate(-50%, 700%);
+    }
+    #mainAbout .resume-details{
+        width: 95% !important;
+        flex-wrap: wrap !important;
+    }
+    #mainAbout .socialPlatform{
+        flex-wrap: wrap;
+        gap: 15px !important;
     }
 }

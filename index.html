@@ -11,24 +11,25 @@
     <!-- Custom style sheet -->
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="container-fluid">
+<body class="">
+  <div class="container-fluid">
     <!-- Navigation bar -->
     <nav class="navbar navbar-expand-lg border-bottom container-fluid">
         <div class="container">
-          <a class="navbar-brand" href="#">TM</a>
+          <a class="navbar-brand fw-bold" href="#">TM</a>
           <button class="navbar-toggler" id="navToggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <i class="fa-solid fa-bars-staggered"></i>
           </button>
           <div class="collapse navbar-collapse transition" id="navbarNav">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a id="menuLink" class="nav-link active" aria-current="page" href="#">Stories</a>
+                <a id="menuLink" class="nav-link active" aria-current="page" href="#mainStories">Stories</a>
               </li>
               <li class="nav-item">
-                <a id="menuLink" class="nav-link" href="#">Place</a>
+                <a id="menuLink" class="nav-link" href="#mainPlaces">Place</a>
               </li>
               <li class="nav-item">
-                <a id="menuLink" class="nav-link" href="#">Export</a>
+                <a id="menuLink" class="nav-link" href="#mainAbout">About Me</a>
               </li>
             </ul>
             <div class="position-relative d-inline-block ms-2">
@@ -390,10 +391,134 @@
       </section>
     </main>
 
-    <main class="container my-5" id="mainEx"></main>
+    <main class="main-about container-fluid my-2" id="mainAbout">
+      <div class="row d-flex flex-lg-row justify-content-center gap-2">
+        <section class="resume col-12 col-md-11 card">
+          <div class="row">
+            <div class="card-title d-flex align-items-start">
+              <img src="image/2307207  Ricky.JPG" class="col-12 col-sm-2 object-fit-cover w-25 h-75 m-2 img-fluid rounded-2" alt="">
+              <div class="col-md-8 mt-3 ms-2 d-flex flex-column flex-wrap resume-details">
+                <h1 class="fw-bold">Ricky Moses. G</h1>
+                <h3 class="fw-semibold text-info">Web Developer</h3>
+                <p class="w-100">Hello, I'm Ricky Moses, an aspiring Web Development with a strong foundation in HTML, CSS, and JavaScript. Currently, I'm gaining hands-on experience through a web development course in SDLC. Passionate about building responsize and user-friendly websites.</p>
+                <div class="row d-flex gap-4 flex-wrap">
+                  <div class="col-lg-4">
+                    <h5 class="text-info mb-3">Contact Info</h5>
+                    <div class="mb-2">
+                      <i class="fa-solid fa-phone me-2"></i>
+                      <span class="">+91 9384956809</span>
+                    </div>
+                    <div class="mb-2">
+                      <i class="fa-solid fa-envelope me-2"></i>
+                      <span class="w-100">rickymoses08122003@gmail.com</span>
+                    </div>
+                    <div class="">
+                      <i class="fa-solid fa-street-view me-2"></i>
+                      <span class="">Begampur(PO), Dindigul</span>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <h5 class="text-info mb-3">Education</h5>
+                    <div class="fw-bold">Gandhigram Rural University</div>
+                    <div class="">B.Voc.Renewable Energy</div>
+                    <div class="">Percentage: 68.36% ( 2021-24 )</div>
+                    <div class="fw-bold">HSC</div>
+                    <span>Percentage: 82.4% ( 2021 )</span>
+                    <div class="fw-bold">SSLC</div>
+                    <span>Percentage: 79.8% ( 2018 )</span>
+                  </div>
+                  <div class="col-lg-3">
+                    <h5 class="text-info mb-3">Skills</h5>
+                    <div class="fw-bold">HTML</div>
+                    <div class="fw-bold">CSS</div>
+                    <div class="fw-bold">BOOTSTRAP</div>
+                    <div class="fw-bold">JAVASCRIPT</div>
+                    <div class="fw-bold">JSON</div>
+                    <div class="fw-bold">REACT JS</div>
+                    <div class="fw-bold">MONGO DB</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-body border-top">
+              <form action="" class="w-50 mx-auto">
+                <div class="form-floating">
+                  <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
+                    <label for="floatingInput">Email address</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required>
+                    <label for="floatingPassword">Password</label>
+                  </div>
+                  <div class="form-floating">
+                    <textarea class="form-control mb-3" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                    <label for="floatingTextarea">Comments</label>
+                  </div>
+                  <div class="form-floating">
+                    <input type="submit" class="btn btn-info text-light" value="Submit">
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+        <section class="socialPlatform ms-2 d-flex flex-lg-column align-items-center justify-content-center gap-5">
+          <i class="fa-brands fa-linkedin-in btn " 
+          data-bs-toggle="popover" 
+          data-bs-title="LinkdeIn" 
+          data-bs-content="<a href='//www.linkedin.com/in/ricky-moses-b22030250' target='_blank'>Visit LinkedIn</a>"></i>
+          <i class="fa-brands fa-github btn " 
+          data-bs-toggle="popover" 
+          data-bs-title="GitHub" 
+          data-bs-content="<a href='https://github.com/Ricky-Moses' target='_blank'>Visit Github</a>"></i>
+          <i class="fa-solid fa-at btn " 
+          data-bs-toggle="popover" 
+          data-bs-title="Email" 
+          data-bs-content="rickymoses08122003@gmail.com"></i>
+          <i class="fa-brands fa-instagram btn " 
+          data-bs-toggle="popover" 
+          data-bs-title="Instagram" 
+          data-bs-content="<a href='https://www.instagram.com/_ricky_moses?igsh=MWdtMThweGt4Ynl6dQ==' target='_blank'>Visit Instagram</a>"></i>
+          <i class="fa-brands fa-facebook btn " 
+          data-bs-toggle="popover" 
+          data-bs-title="Facebook" 
+          data-bs-content="<a href='https://www.facebook.com/share/1QRp6qvU1b/' target='_blank'>Visit Facebook</a>"></i>
+        </section>
+      </div>
+    </main>
+  </div>
 </body>
 <!-- Bootstrap script -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <!-- Custom Script -->
  <script src="main.js"></script>
+ <!-- Popover -->
+ <script>
+  document.addEventListener("DOMContentLoaded", function () {
+      let popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
+      let activePopover = null;
+      popoverTriggerList.forEach((popoverTriggerEl)=>{
+        let popoverInstance = new bootstrap.Popover(popoverTriggerEl, {
+          html: true,
+          trigger: 'click'
+        });
+
+        popoverTriggerEl.addEventListener('click', ()=>{
+          if(activePopover && activePopover !== popoverInstance){
+              activePopover.hide();
+          }
+          activePopover = popoverInstance;
+        })
+
+      });
+      document.addEventListener('click', (event)=>{
+        if (activePopover && !event.target.closest('[data-bs-toggle="popover"]')) {
+            activePopover.hide();
+            activePopover = null;
+        }
+      })
+  });
+</script>
+
 </html>

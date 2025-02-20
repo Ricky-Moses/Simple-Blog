@@ -107,18 +107,32 @@ function updateStyles(){
     let fontSizeH2 = '3em';
     let content;
 
-    if(window.innerWidth <= 1240) leftValue = '28%';
-    if(window.innerWidth <= 1100) leftValue = '32%';
-    if(window.innerWidth <= 970) leftValue = '38%';
-    if(window.innerWidth <= 825) leftValue = '45%';
+    if(window.innerWidth <= 825) leftValue = '45%'
+    else if(window.innerWidth <= 970) leftValue = '38%'
+    else if(window.innerWidth <= 1100) leftValue = '32%'
+    else if(window.innerWidth <= 1240) leftValue = '28%'
 
-    if(window.innerWidth <= 700) fontSizeH1 = '5em';
-    if(window.innerWidth <= 570) fontSizeH1 = '4em';
-    if(window.innerWidth <= 435) fontSizeH1 = '3em';
+    if(window.innerWidth <= 435){
+        fontSizeH1 = '3em'
+        fontSizeH2 = '2em'
+    }
+    else if(window.innerWidth <= 570) fontSizeH1 = '4em'
+    else if(window.innerWidth <= 700) fontSizeH1 = '5em'
+
+    if(window.innerWidth <= 700) content = '80%'
+
+    // if(window.innerWidth <= 1240) leftValue = '28%';
+    // if(window.innerWidth <= 1100) leftValue = '32%';
+    // if(window.innerWidth <= 970) leftValue = '38%';
+    // if(window.innerWidth <= 825) leftValue = '45%';
+
+    // if(window.innerWidth <= 700) fontSizeH1 = '5em';
+    // if(window.innerWidth <= 570) fontSizeH1 = '4em';
+    // if(window.innerWidth <= 435) fontSizeH1 = '3em';
     
-    if(window.innerWidth <= 435) fontSizeH2 = '2em';
+    // if(window.innerWidth <= 435) fontSizeH2 = '2em';
 
-    if(window.innerWidth <= 700) content = '80%';
+    // if(window.innerWidth <= 700) content = '80%';
 
 
     placeDetails.forEach(pl =>{
